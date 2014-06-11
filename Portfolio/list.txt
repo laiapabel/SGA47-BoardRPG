@@ -1,0 +1,54 @@
+﻿1. map
+- tile event
+	- start
+	- halfway
+	- fork
+	- normal
+	- event
+- random tile(김민성)
+- stage1
+	- tile
+- stage2
+	- tile
+2. character
+- ilde(정지) (정금용)
+- move (정금용)
+	- 4방향
+	- wlak(4칸 이하)
+	- run(5칸 이상)
+- state
+	- attack
+	- defence
+	- heath
+	- move (이동력-주사위 몇 면체 굴리나)
+	- luck (이벤트에서 좋은 효과 걸릴 확률)
+- item(정금용)
+: 구입가격, 판매가격, state의 모든 항목
+:(단, 공격력과 이동력은 주사위단위임으로 구현시 주의)
+	- weapon
+	- armor
+	- shooes
+	- accetory
+	- consume
+	- equip
+	- remove
+- skill
+	- battle
+	- assist
+3. job
+	- fighter
+	- merchant
+4. shop
+	- buy
+	- sell
+	- gameble
+5. start
+- main menu
+- character select
+- stage select
+- PCvPC
+- PCvCom
+6. end
+- win
+- lose
+7. UI

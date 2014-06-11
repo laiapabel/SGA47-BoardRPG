@@ -1,0 +1,9 @@
+// id	파일명	rect	투명처리	투명색상	알파	알파값
+BackGround	Resource\\image\\bg.bmp	0,0,1000,700	0	0		
+tile5	Resource\\image\\MAP_TILE_START.bmp	0,0,80,80	0	0		
+tile4	Resource\\image\\MAP_TILE_SHOP.bmp	0,0,80,80	0	0		
+tile3	Resource\\image\\MAP_TILE_HALF.bmp	0,0,80,80	0	0		
+tile2	Resource\\image\\MAP_TILE_FORK.bmp	0,0,80,80	0	0		
+tile1	Resource\\image\\MAP_TILE_NORMAL.bmp	0,0,80,80	0	0		
+dice4	Resource\\image\\dice6.bmp	0,0,300,50	0	0
+dice6	Resource\\image\\dice6.bmp	0,0,300,50	0	0

@@ -1,0 +1,38 @@
+// id	이미지수	반복	딜레이		
+// 경로	rect 크기	투명처리	투명색상	알파사용	알파값
+dice4	4	1	100		
+Resource\\image\\dice6.bmp	0,0,50,50	0	000000	0	0
+Resource\\image\\dice6.bmp	50,0,50,50	0	000000	0	0
+Resource\\image\\dice6.bmp	100,0,50,50	0	000000	0	0
+Resource\\image\\dice6.bmp	150,0,50,50	0	000000	0	0
+dice6	6	1	100		
+Resource\\image\\dice6.bmp	0,0,50,50	0	000000	0	0
+Resource\\image\\dice6.bmp	50,0,50,50	0	000000	0	0
+Resource\\image\\dice6.bmp	100,0,50,50	0	000000	0	0
+Resource\\image\\dice6.bmp	150,0,50,50	0	000000	0	0
+Resource\\image\\dice6.bmp	200,0,50,50	0	000000	0	0
+Resource\\image\\dice6.bmp	250,0,50,50	0	000000	0	0
+char1f	2	1	200
+Resource\\image\\char.bmp	0,0,31,64	1	ffffff	0	0
+Resource\\image\\char.bmp	31,0,31,64	1	ffffff	0	0
+char1b	2	1	200
+Resource\\image\\char.bmp	0,64,31,64	1	ffffff	0	0
+Resource\\image\\char.bmp	31,64,31,64	1	ffffff	0	0
+char1l	2	1	200
+Resource\\image\\char.bmp	0,128,31,64	1	ffffff	0	0
+Resource\\image\\char.bmp	31,128,31,64	1	ffffff	0	0
+char1r	2	1	200
+Resource\\image\\char.bmp	0,192,31,64	1	ffffff	0	0
+Resource\\image\\char.bmp	31,192,31,64	1	ffffff	0	0
+char2f	2	1	200
+Resource\\image\\char.bmp	62,0,31,64	1	ffffff	0	0
+Resource\\image\\char.bmp	93,0,31,64	1	ffffff	0	0
+char2b	2	1	200
+Resource\\image\\char.bmp	62,64,31,64	1	ffffff	0	0
+Resource\\image\\char.bmp	93,64,31,64	1	ffffff	0	0
+char2l	2	1	200
+Resource\\image\\char.bmp	62,128,31,64	1	ffffff	0	0
+Resource\\image\\char.bmp	93,128,31,64	1	ffffff	0	0
+char2r	2	1	200
+Resource\\image\\char.bmp	62,192,31,64	1	ffffff	0	0
+Resource\\image\\char.bmp	93,192,31,64	1	ffffff	0	0
