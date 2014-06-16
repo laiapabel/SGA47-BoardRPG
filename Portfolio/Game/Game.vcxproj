@@ -16,6 +16,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="Turn.cpp" />
     <ClCompile Include="winmain.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -24,6 +25,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Stage.h" />
+    <ClInclude Include="Turn.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{20375056-9ED9-43E7-9E05-5F06CCB5ACED}</ProjectGuid>

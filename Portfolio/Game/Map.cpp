@@ -12,7 +12,7 @@ MAP::~MAP()
 void MAP::SetImage()
 {
 
-	int ids [] = {3, 1, 1, 1, 1, 2, 1, 1, 1, 1, 3,
+	int ids1 [] = {3, 1, 1, 1, 1, 2, 1, 1, 1, 1, 3,
 				  1, 9, 9, 9, 9, 1, 9, 9, 9, 9, 1,
 				  1, 9, 9, 9, 9, 1, 9, 9, 9, 9, 1,
 				  2, 1, 1, 1, 1, 5, 1, 1, 1, 1, 2,
@@ -20,9 +20,9 @@ void MAP::SetImage()
 				  1, 9, 9, 9, 9, 1, 9, 9, 9, 9, 1,
 				  3, 1, 1, 1, 1, 2, 1, 1, 1, 1, 3};
 
-	for (int i = 0; i < sizeof(ids)/sizeof(int); i++)
+	for (int i = 0; i < sizeof(ids1)/sizeof(int); i++)
 	{
-		tile_type1.push_back(ids[i]);
+		tile_type1.push_back(ids1[i]);
 	}
 
 }

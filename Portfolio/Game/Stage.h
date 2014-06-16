@@ -2,6 +2,7 @@
 
 #include "Map.h"
 #include "Character.h"
+#include "Turn.h"
 
 class STAGE
 {
@@ -17,6 +18,7 @@ public :
 
 private :
 	MAP Map;
+	TURN Turn;
 	CHARACTER Char;
-	bool first_chk;
+	bool start_chk;
 };

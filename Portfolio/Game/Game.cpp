@@ -12,22 +12,11 @@ Game::~Game()
 
 void Game::Input(DWORD tick)
 {
-	if (InputDevice.OnClick('4'))
-	{
-		Dice.Input(4);
-	}
-	else if (InputDevice.OnClick('6'))
-	{
-		Dice.Input(6);
-	}
-	else if (InputDevice.OnClick('0'))
-	{
-		Stage.Input(0);
-	}
+	if (InputDevice.OnClick(VK_SPACE))
+		Stage.Input(tick);
 }
 void Game::Update(DWORD tick)
 {
-	Dice.Update(tick);
 	Stage.Update(tick);
 }
 void Game::Draw(DWORD)
@@ -35,8 +24,6 @@ void Game::Draw(DWORD)
 	backbuffer << RGB(0,0,0);
 
 	Stage.Draw(backbuffer);
-
-	Dice.Draw(backbuffer);
 
 	backbuffer.Draw();
 }

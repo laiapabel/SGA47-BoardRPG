@@ -4,24 +4,21 @@
 #include <cstdlib>
 #include <ctime>
 
-class DICE
+class DICE : public Object
 {
 public :
 	DICE();
 	~DICE();
 
-	void Input(int);
+	void Input(DWORD);
 	void Update(DWORD);
 	void Draw(HDC);
-
-protected :
-	void Init();
+	int GetDice();
 
 private :
 	DWORD update_dt;
 	DWORD update_delay;
 	int dice_quantity;
-	int dice_type;
 	int dice_stop;
 	bool play;
 	bool stop;

@@ -4,7 +4,6 @@
 
 #include "../GameDev/GameDev.h"
 
-#include "Dice.h"
 #include "Stage.h"
 
 #include <windows.h>
@@ -36,6 +35,5 @@ protected :
 private :
 	DWORD update_dt;
 	DWORD update_delay;
-	DICE Dice;
 	STAGE Stage;
 };

@@ -1,39 +1,30 @@
 #include "Dice.h"
 
 DICE::DICE()
- : update_dt(0), update_delay(3000), dice_type(0), dice_stop(0)
+ : update_dt(0), update_delay(3000)
+ , dice_stop(0)
  , play(false), stop(false)
 {
-	srand((unsigned)time(NULL));
 }
 DICE::~DICE()
 {
 }
 
-void DICE::Input(int type)
+void DICE::Input(DWORD)
 {
+	dice_stop = rand()%6;
+
 	if (!play)
 	{
-		dice_type = type;
 		play = true;
 		stop = false;
-
-		dice_stop = rand()%dice_type+1;
-
-		AniDepot["dice4"]->SetPosition(Point(1000/2-100,700/2));
-		AniDepot["dice6"]->SetPosition(Point(1000/2+50,700/2));
-		ImgDepot["dice4"]->SetRect(Rect(1000/2,700/2));
-		ImgDepot["dice6"]->SetRect(Rect(1000/2,700/2));
 	}
 }
 void DICE::Update(DWORD tick)
 {
-	if (dice_type != 0 && play)
+	if (play)
 	{
-		if (dice_type == 4)
-			AniDepot["dice4"]->Update(tick);
-		else if (dice_type == 6)
-			AniDepot["dice6"]->Update(tick);
+		AniDepot["diceAni"]->Update(tick);
 
 		if (update_dt >= 3000)
 		{
@@ -48,35 +39,23 @@ void DICE::Update(DWORD tick)
 }
 void DICE::Draw(HDC hdc)
 {
-	if (dice_type != 0 && (play || stop))
+	if (play || stop)
 	{
-		if (dice_type == 4)
+		if (stop)
 		{
-			if (stop)
-			{
-				ImgDepot["dice4"]->SetSize(Rect(50*dice_stop-50,0, 50, 50));
-				ImgDepot["dice4"]->Draw(hdc);
-			}
-			else
-			{
-				AniDepot["dice4"]->Draw(hdc);
-			}
+			ImgDepot["dice6"]->Move(Point(1000/2+260+id()*50,700/2));
+			ImgDepot["dice6"]->SetSize(Rect(0 + 40*dice_stop,0, 40, 40));
+			ImgDepot["dice6"]->Draw(hdc);
 		}
-		else if (dice_type == 6)
+		else
 		{
-			if (stop)
-			{
-				ImgDepot["dice6"]->SetSize(Rect(50*dice_stop-50,0, 50, 50));
-				ImgDepot["dice6"]->Draw(hdc);
-			}
-			else
-			{
-				AniDepot["dice6"]->Draw(hdc);
-			}
+			AniDepot["diceAni"]->SetPosition(Point(1000/2+id()*50,700/2));
+			AniDepot["diceAni"]->Draw(hdc);
 		}
 	}
 }
 
-void DICE::Init()
+int DICE::GetDice()
 {
+	return dice_stop;
 }

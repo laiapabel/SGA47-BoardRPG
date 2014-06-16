@@ -1,26 +1,24 @@
 #pragma once
 
 #include "../GameDev/GameDev.h"
+#include "Dice.h"
 
-struct Pos
-{
-	Point pos;
-	int dest;
-};
-
-class CHARACTER
+class TURN
 {
 public :
-	CHARACTER();
-	~CHARACTER();
+	TURN();
+	~TURN();
 
-	void Input(Point, int);
+	void Input(int);
 	void Update(DWORD);
 	void Draw(HDC);
+	int GetTurn();
 
 private :
-	Pos pos1p;
-	Pos pos2p;
+	int turn;
+	int dice_cnt;
+	bool turn_chk;
+	DICE* Dice;
 	DWORD update_dt;
 	DWORD update_delay;
 };

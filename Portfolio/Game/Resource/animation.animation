@@ -1,17 +1,15 @@
 // id	이미지수	반복	딜레이		
 // 경로	rect 크기	투명처리	투명색상	알파사용	알파값
-dice4	4	1	100		
-Resource\\image\\dice6.bmp	0,0,50,50	0	000000	0	0
-Resource\\image\\dice6.bmp	50,0,50,50	0	000000	0	0
-Resource\\image\\dice6.bmp	100,0,50,50	0	000000	0	0
-Resource\\image\\dice6.bmp	150,0,50,50	0	000000	0	0
-dice6	6	1	100		
-Resource\\image\\dice6.bmp	0,0,50,50	0	000000	0	0
-Resource\\image\\dice6.bmp	50,0,50,50	0	000000	0	0
-Resource\\image\\dice6.bmp	100,0,50,50	0	000000	0	0
-Resource\\image\\dice6.bmp	150,0,50,50	0	000000	0	0
-Resource\\image\\dice6.bmp	200,0,50,50	0	000000	0	0
-Resource\\image\\dice6.bmp	250,0,50,50	0	000000	0	0
+diceAni	9	1	100		
+Resource\\image\\DiceAnimation.bmp	0,0,40,40	1	00ff00	0	0
+Resource\\image\\DiceAnimation.bmp	40,0,40,40	1	00ff00	0	0
+Resource\\image\\DiceAnimation.bmp	80,0,40,40	1	00ff00	0	0
+Resource\\image\\DiceAnimation.bmp	120,0,40,40	1	00ff00	0	0
+Resource\\image\\DiceAnimation.bmp	160,0,40,40	1	00ff00	0	0
+Resource\\image\\DiceAnimation.bmp	200,0,40,40	1	00ff00	0	0
+Resource\\image\\DiceAnimation.bmp	240,0,40,40	1	00ff00	0	0
+Resource\\image\\DiceAnimation.bmp	280,0,40,40	1	00ff00	0	0
+Resource\\image\\DiceAnimation.bmp	320,0,40,40	1	00ff00	0	0
 char1f	2	1	200
 Resource\\image\\char.bmp	0,0,31,64	1	ffffff	0	0
 Resource\\image\\char.bmp	31,0,31,64	1	ffffff	0	0
