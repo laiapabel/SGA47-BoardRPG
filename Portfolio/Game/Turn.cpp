@@ -3,11 +3,9 @@
 TURN::TURN()
  : update_dt(0), update_delay(3000)
  , turn_chk(false), turn(1)
- , dice_cnt(1)
+ , dice_cnt(1), Dice(NULL)
 {
 	srand((unsigned)time(NULL));
-	Dice = new DICE[dice_cnt];
-	//dice_cnt = rand()%6+1;
 }
 TURN::~TURN()
 {
@@ -17,10 +15,18 @@ TURN::~TURN()
 
 void TURN::Input(int user)
 {
-	turn = user;
+	if (Dice != NULL)
+	{
+		delete [] Dice;
+		Dice = NULL;
+	}
 
-	//if (Dice == NULL)
-	//	Dice = new DICE[dice_cnt];
+	turn = user;
+	
+	dice_cnt = rand()%6+1;
+
+	if (Dice == NULL)
+		Dice = new DICE[dice_cnt];
 
 	for (int i = 0; i < dice_cnt; i++)
 	{
@@ -39,6 +45,9 @@ void TURN::Input(int user)
 }
 void TURN::Update(DWORD tick)
 {
+	if (Dice == NULL)
+		Dice = new DICE[dice_cnt];
+
 	for (int i = 0; i < dice_cnt; i++)
 	{
 		Dice[i].Update(tick);
