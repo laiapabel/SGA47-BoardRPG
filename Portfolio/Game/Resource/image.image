@@ -2,10 +2,13 @@
 BackGround	Resource\\image\\bg.bmp	0,0,1000,700	0	0	0	0
 Title	Resource\\image\\TITLE.bmp	0,0,1000,700	0	0	0	0
 tile9	Resource\\image\\MAP_TILE_BLOCK.bmp	0,0,80,80	0	0	0	0	
-tile5	Resource\\image\\MAP_TILE_START.bmp	0,0,80,80	0	0	0	0	
-tile4	Resource\\image\\MAP_TILE_SHOP.bmp	0,0,80,80	0	0	0	0
-tile3	Resource\\image\\MAP_TILE_HALF.bmp	0,0,80,80	0	0	0	0
-tile2	Resource\\image\\MAP_TILE_FORK.bmp	0,0,80,80	0	0	0	0
+tile8	Resource\\image\\MAP_TILE_FORK_R.bmp	0,0,80,80	0	0	0	0
+tile7	Resource\\image\\MAP_TILE_FORK_L.bmp	0,0,80,80	0	0	0	0
+tile6	Resource\\image\\MAP_TILE_FORK_D.bmp	0,0,80,80	0	0	0	0
+tile5	Resource\\image\\MAP_TILE_FORK_U.bmp	0,0,80,80	0	0	0	0
+tile4	Resource\\image\\MAP_TILE_START.bmp	0,0,80,80	0	0	0	0	
+tile3	Resource\\image\\MAP_TILE_SHOP.bmp	0,0,80,80	0	0	0	0
+tile2	Resource\\image\\MAP_TILE_HALF.bmp	0,0,80,80	0	0	0	0
 tile1	Resource\\image\\MAP_TILE_NORMAL.bmp	0,0,80,80	0	0	0	0	
 dice4	Resource\\image\\Dice.bmp	0,0,240,40	1	00ff00	0	0
 dice6	Resource\\image\\Dice.bmp	0,0,240,40	1	00ff00	0	0

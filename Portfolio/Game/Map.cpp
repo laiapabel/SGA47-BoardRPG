@@ -12,13 +12,13 @@ MAP::~MAP()
 void MAP::SetImage()
 {
 
-	int ids1 [] = {3, 1, 1, 1, 1, 2, 1, 1, 1, 1, 3,
+	int ids1 [] = {2, 1, 1, 1, 1, 5, 1, 1, 1, 1, 2,
 				  1, 9, 9, 9, 9, 1, 9, 9, 9, 9, 1,
 				  1, 9, 9, 9, 9, 1, 9, 9, 9, 9, 1,
-				  2, 1, 1, 1, 1, 5, 1, 1, 1, 1, 2,
+				  7, 1, 1, 1, 1, 4, 1, 1, 1, 1, 8,
 				  1, 9, 9, 9, 9, 1, 9, 9, 9, 9, 1,
 				  1, 9, 9, 9, 9, 1, 9, 9, 9, 9, 1,
-				  3, 1, 1, 1, 1, 2, 1, 1, 1, 1, 3};
+				  2, 1, 1, 1, 1, 6, 1, 1, 1, 1, 2};
 
 	for (int i = 0; i < sizeof(ids1)/sizeof(int); i++)
 	{
@@ -52,9 +52,9 @@ void MAP::Draw(HDC hdc)
 	{
 		int shop = rand()%10;
 
-		if (*it == 1 && shop < 2 && shop_cnt < 5)
+		if (*it == 1 && shop < 1 && shop_cnt < 2)
 		{
-			*it = 4;
+			*it = 3;
 			shop_cnt++;
 		}
 
@@ -63,14 +63,14 @@ void MAP::Draw(HDC hdc)
 
 		Rect rcDraw = rcBox >> Size(80*(i%11), 80*(i/11));
 
-		if (*it == 5)
+		if (*it == 4)
 		{
 			start.x = rcDraw.left+9;
 			start.y = rcDraw.top+8;
 		}
 
-		//if (*it == 9)
-		//	continue;
+		if (*it == 9)
+			continue;
 
 		ImgDepot[oss.str()]->SetRect(rcDraw);
 		ImgDepot[oss.str()]->Draw(hdc);
