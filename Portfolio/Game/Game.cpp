@@ -2,6 +2,7 @@
 
 Game::Game()
 	: update_dt(0), update_delay(100)
+	, start_chk(false)
 {
 	SetWindowTitle(_T("Board RPG"));
 	SetWindowStyle(WS_OVERLAPPEDWINDOW & ~WS_THICKFRAME & ~WS_MAXIMIZEBOX);
@@ -12,7 +13,9 @@ Game::~Game()
 
 void Game::Input(DWORD tick)
 {
-	if (InputDevice.OnClick(VK_SPACE))
+	if (InputDevice[VK_RETURN])
+		start_chk = true;
+	else if (InputDevice.OnClick(VK_SPACE))
 		Stage.Input(tick);
 }
 void Game::Update(DWORD tick)
@@ -23,7 +26,10 @@ void Game::Draw(DWORD)
 {
 	backbuffer << RGB(0,0,0);
 
-	Stage.Draw(backbuffer);
+	if (start_chk)
+		Stage.Draw(backbuffer);
+	else
+		ImgDepot["Title"]->Draw(backbuffer);
 
 	backbuffer.Draw();
 }

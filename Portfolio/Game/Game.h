@@ -33,6 +33,7 @@ protected :
 	void Leave();
 
 private :
+	bool start_chk;
 	DWORD update_dt;
 	DWORD update_delay;
 	STAGE Stage;

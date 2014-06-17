@@ -69,8 +69,8 @@ void MAP::Draw(HDC hdc)
 			start.y = rcDraw.top+8;
 		}
 
-		if (*it == 9)
-			continue;
+		//if (*it == 9)
+		//	continue;
 
 		ImgDepot[oss.str()]->SetRect(rcDraw);
 		ImgDepot[oss.str()]->Draw(hdc);
