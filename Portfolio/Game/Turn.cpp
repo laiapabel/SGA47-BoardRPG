@@ -13,26 +13,31 @@ TURN::~TURN()
 	Dice = NULL;
 }
 
-void TURN::Input(int user)
+void TURN::Input(int key)
 {
-	if (Dice != NULL)
+	// 턴 종료 확인
+	if (key == 46)
+		turn_chk = !turn_chk;
+
+	// 주사위 굴림
+	if (key == 32)
 	{
-		delete [] Dice;
-		Dice = NULL;
+		if (Dice != NULL)
+		{
+			delete [] Dice;
+			Dice = NULL;
+		}
+
+		dice_cnt = rand()%6+1;
+
+		if (Dice == NULL)
+			Dice = new DICE[dice_cnt];
+
+		for (int i = 0; i < dice_cnt; i++)
+		{
+			Dice[i].Input(i);
+		}
 	}
-
-	turn = user;
-	
-	dice_cnt = rand()%6+1;
-
-	if (Dice == NULL)
-		Dice = new DICE[dice_cnt];
-
-	for (int i = 0; i < dice_cnt; i++)
-	{
-		Dice[i].Input(i);
-	}
-
 	if (turn_chk)
 	{
 		if (turn == 1)

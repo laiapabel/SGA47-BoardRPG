@@ -15,6 +15,7 @@ struct Point : public POINT
 	Point operator << (const Size& cs) const;
 	Point operator >> (const Size& cs) const;
 	Point operator - (const Point& o) const;
+	Point operator + (const Point& o) const;
 	float operator ^ (const Point& o) const;
 };
 

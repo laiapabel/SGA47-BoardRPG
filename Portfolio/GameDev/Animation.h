@@ -22,6 +22,7 @@ public :
 	void SetPosition(const Point& pt);
 	void SetRect(const Rect& rc);
 	Rect getRect(void) const;
+	Point GetPoint() const;
 
 	void Update(DWORD tick);
 	void Draw(HDC hdc, const Rect& rc);

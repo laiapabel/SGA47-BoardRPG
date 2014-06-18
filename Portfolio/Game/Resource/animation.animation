@@ -10,27 +10,51 @@ Resource\\image\\DiceAnimation.bmp	200,0,40,40	1	00ff00	0	0
 Resource\\image\\DiceAnimation.bmp	240,0,40,40	1	00ff00	0	0
 Resource\\image\\DiceAnimation.bmp	280,0,40,40	1	00ff00	0	0
 Resource\\image\\DiceAnimation.bmp	320,0,40,40	1	00ff00	0	0
-char1f	2	1	200
-Resource\\image\\char.bmp	0,0,31,64	1	ffffff	0	0
-Resource\\image\\char.bmp	31,0,31,64	1	ffffff	0	0
-char1b	2	1	200
-Resource\\image\\char.bmp	0,64,31,64	1	ffffff	0	0
-Resource\\image\\char.bmp	31,64,31,64	1	ffffff	0	0
-char1l	2	1	200
-Resource\\image\\char.bmp	0,128,31,64	1	ffffff	0	0
-Resource\\image\\char.bmp	31,128,31,64	1	ffffff	0	0
-char1r	2	1	200
-Resource\\image\\char.bmp	0,192,31,64	1	ffffff	0	0
-Resource\\image\\char.bmp	31,192,31,64	1	ffffff	0	0
-char2f	2	1	200
-Resource\\image\\char.bmp	62,0,31,64	1	ffffff	0	0
-Resource\\image\\char.bmp	93,0,31,64	1	ffffff	0	0
-char2b	2	1	200
-Resource\\image\\char.bmp	62,64,31,64	1	ffffff	0	0
-Resource\\image\\char.bmp	93,64,31,64	1	ffffff	0	0
-char2l	2	1	200
-Resource\\image\\char.bmp	62,128,31,64	1	ffffff	0	0
-Resource\\image\\char.bmp	93,128,31,64	1	ffffff	0	0
-char2r	2	1	200
-Resource\\image\\char.bmp	62,192,31,64	1	ffffff	0	0
-Resource\\image\\char.bmp	93,192,31,64	1	ffffff	0	0
+char1f	5	1	200
+Resource\\image\\char1-f.bmp	0,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-f.bmp	35,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-f.bmp	70,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-f.bmp	105,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-f.bmp	140,0,35,65	1	00ff00	0	0
+char1b	5	1	200
+Resource\\image\\char1-b.bmp	0,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-b.bmp	35,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-b.bmp	70,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-b.bmp	105,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-b.bmp	140,0,35,65	1	00ff00	0	0
+char1l	5	1	200
+Resource\\image\\char1-l.bmp	0,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-l.bmp	35,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-l.bmp	70,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-l.bmp	105,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-l.bmp	140,0,35,65	1	00ff00	0	0
+char1r	5	1	200
+Resource\\image\\char1-r.bmp	0,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-r.bmp	35,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-r.bmp	70,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-r.bmp	105,0,35,65	1	00ff00	0	0
+Resource\\image\\char1-r.bmp	140,0,35,65	1	00ff00	0	0
+char2f	5	1	200
+Resource\\image\\char2-f.bmp	0,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-f.bmp	35,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-f.bmp	70,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-f.bmp	105,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-f.bmp	140,0,35,65	1	00ff00	0	0
+char2b	5	1	200
+Resource\\image\\char2-b.bmp	0,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-b.bmp	35,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-b.bmp	70,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-b.bmp	105,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-b.bmp	140,0,35,65	1	00ff00	0	0
+char2l	5	1	200
+Resource\\image\\char2-l.bmp	0,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-l.bmp	35,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-l.bmp	70,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-l.bmp	105,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-l.bmp	140,0,35,65	1	00ff00	0	0
+char2r	5	1	200
+Resource\\image\\char2-r.bmp	0,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-r.bmp	35,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-r.bmp	70,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-r.bmp	105,0,35,65	1	00ff00	0	0
+Resource\\image\\char2-r.bmp	140,0,35,65	1	00ff00	0	0

@@ -13,10 +13,21 @@ Game::~Game()
 
 void Game::Input(DWORD tick)
 {
-	if (InputDevice[VK_RETURN])
+	if (InputDevice.OnClick(VK_RETURN))
 		start_chk = true;
 	else if (InputDevice.OnClick(VK_SPACE))
-		Stage.Input(tick);
+		Stage.Input(VK_SPACE);
+	else if (InputDevice.OnClick(VK_DELETE))
+		Stage.Input(VK_DELETE);
+	
+	if (InputDevice.IsPressed(VK_LEFT))
+		Stage.Input(3);
+	else if (InputDevice.IsPressed(VK_RIGHT))
+		Stage.Input(4);
+	else if (InputDevice.IsPressed(VK_UP))
+		Stage.Input(1);
+	else if (InputDevice.IsPressed(VK_DOWN))
+		Stage.Input(2);
 }
 void Game::Update(DWORD tick)
 {

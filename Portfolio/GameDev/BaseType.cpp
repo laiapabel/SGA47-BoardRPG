@@ -36,6 +36,10 @@ Point Point::operator - (const Point& o) const
 {
 	return Point(x - o.x, y - o.y);
 }
+Point Point::operator + (const Point& o) const
+{
+	return Point(x + o.x, y + o.y);
+}
 float Point::operator ^ (const Point& o) const
 {
 	Point diff = *this - o;

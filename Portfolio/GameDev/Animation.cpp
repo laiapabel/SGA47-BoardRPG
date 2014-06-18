@@ -1,5 +1,5 @@
 ﻿#include "Animation.h"
-
+#include <sstream>
 
 Animation::Animation()
    : update_dt(0), delay(500)
@@ -131,4 +131,9 @@ void Animation::SetAlpha(BYTE alpha)
    {
       (*it)->SetAlpha(alpha);
    }
+}
+
+Point Animation::GetPoint() const
+{
+	return ptDraw;
 }
